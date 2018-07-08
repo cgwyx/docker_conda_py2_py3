@@ -22,7 +22,7 @@ RUN conda update --all -y &&\
     conda config --set show_channel_urls yes &&\
     conda create -y -n py2 python=2.7 &&\
     conda create -y -n py3 python=3.6 &&\
-    conda install -y -n py2 -c conda-forge python-docx 
+    conda install -y -n py2 -c conda-forge python-docx &&\
     conda install -y -n py2 -c conda-forge scipy
          
 CMD ["/bin/bash"]
